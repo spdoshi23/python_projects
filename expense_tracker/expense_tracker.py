@@ -32,21 +32,18 @@ expenses = [
 option = int(input("Choose option: "))
 while option != 7:
 
-    if option == 1:
-        str1 = "ADD AN EXPENSE"
-        print(str1.center(50, "*"))
-        expenses.append({"name" : input("Expense name: "),
-                         "amount" : int(input("Amount spent: ")),
-                         "category" : input("Category: ")})
-        print("Expense added successfully")
+    if option == 1: 
+        str1 = "ADD AN EXPENSE" 
+        print(str1.center(50, "*")) 
+        expenses.append({"name" : input("Expense name: "), "amount" : int(input("Amount spent: ")), "category" : input("Category: ")}) 
+        print("Expense added successfully") 
         print(menu)
 
-
-    if option == 2:
-        str2 = "ALL EXPENSES"
-        print(str2.center(50, "*"))
-        for i in range(0, len(expenses)):
-            print(i+1,".", expenses[i]["name"], "|", expenses[i]["amount"], "|", expenses[i]["category"] )
+    if option == 2: 
+        str2 = "ALL EXPENSES" 
+        print(str2.center(50, "*")) 
+        for i in range(0, len(expenses)): 
+            print(i+1,".", expenses[i]["name"], "|", expenses[i]["amount"], "|", expenses[i]["category"] ) 
         print(menu)
 
 
